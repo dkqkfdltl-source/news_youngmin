@@ -1,8 +1,8 @@
-name: 유튜브 토픽 봇 - 매일 8시
+name: news_youngmin - 매일 8시
 
 on:
   schedule:
-    - cron: '40 22 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -29,4 +29,4 @@ jobs:
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
-        run: python youtubebot.py
+        run: python news_youngmin.py
