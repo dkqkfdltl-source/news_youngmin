@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 패키지 설치
-        run: pip install google-genai requests
+      - name: 패키지 설치 # 여기에 beautifulsoup4 를 추가했습니다!
+        run: pip install google-genai requests beautifulsoup4
 
       - name: 봇 실행
         env:
